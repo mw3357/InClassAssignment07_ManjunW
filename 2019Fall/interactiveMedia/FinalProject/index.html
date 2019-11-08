@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6b637be476.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet" type="text/css">
+    <title>Choose your group</title>
+    <style>
+      button{
+        width: 150px;
+        height: 100px;
+      }
+      img{
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        padding: 30px;
+      }
+      .container{
+        padding: 20px;
+      }
+      .my-row{
+        text-align: center;
+      }
+      .main{
+        height:450px;
+        width:450px;
+        text-align: center;
+      }
+      #special{
+        padding-top: 30px;
+        padding-bottom: 50px;
+      }
+      li{
+        font-family: 'Merienda', serif;
+        font-size: 20px;
+      }
+      #contact{
+        text-align: center;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-container" id="special">
+      <div class="row my-row">
+        <div class="col-md-6 my-col" id="1">
+          <img src="images/teacher.gif" alt="teacher">
+          <a href="#home"><button>Teachers</button></a>
+        </div>
+        <div class="col-md-6 my-col" id="2">
+          <img src="images/student.gif" alt="student">
+          <a href="#home"><button>Students</button></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      var btn = document.querySelector('body');
+      function random(number) {
+        return Math.floor(Math.random()*number);
+      }
+      function bgChange() {
+        var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        document.body.style.backgroundColor = rndCol;
+      }
+      btn.onmouseover = bgChange;
+    </script>
+
+  </body>
+
+  <footer id="contact">
+    <div class="container my-container">
+      <div class="row my-row">
+        <div class="col-md-12 my-col">
+        <div class="fa-3x"><i class="fas fa-cog fa-spin"></i></div>
+        <a href="mailto:mw3357@tc.columbia.edu" style="color: white">mw3357@tc.columbia.edu</a>
+        <span>| <a href="mailto:yx2557@tc.columbia.edu" style="color: white">yx2557@tc.columbia.edu</a></span>
+        </div>
+      </div>
+      ©2019 Created by Manjun & Yanning
+    </div>
+  </footer>
+</html>
